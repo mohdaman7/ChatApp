@@ -7,7 +7,7 @@ const UserLogin = ({ setUser }) => {
   const [userName, setUserName] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
-
+  
   const handleUser = () => {
     if (!userName.trim()) {
       return;
@@ -26,7 +26,6 @@ const UserLogin = ({ setUser }) => {
 
   return (
     <div className="min-h-screen w-full flex">
-      {/* Left side - Illustration/Branding */}
       <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-indigo-700 via-purple-700 to-violet-800 text-white">
         <div className="w-full h-full flex flex-col justify-between p-12">
           <div>
@@ -82,7 +81,6 @@ const UserLogin = ({ setUser }) => {
         </div>
       </div>
       
-      {/* Right side - Login Form */}
       <div className="w-full lg:w-1/2 flex items-center justify-center p-6 bg-gray-50">
         <div className="w-full max-w-md">
           <div className="flex lg:hidden justify-center mb-8">

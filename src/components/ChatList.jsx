@@ -51,7 +51,6 @@ function ChatList({ chats }) {
     );
   }
 
-  // Function to group chats by date
   const groupChatsByDate = (chats) => {
     const groups = {};
     chats.forEach(chat => {

@@ -43,15 +43,15 @@ function Chat() {
     <div className="h-screen w-full bg-gray-50 font-sans flex">
       {user ? (
         <>
-          {/* Sidebar */}
+  
           <div className={`bg-indigo-800 text-white ${showSidebar ? 'w-64' : 'w-16'} flex-shrink-0 transition-all duration-300 flex flex-col`}>
-            {/* Brand */}
+  
             <div className="p-4 border-b border-indigo-700 flex items-center">
               <FaReact className="text-2xl text-indigo-300" />
               {showSidebar && <span className="ml-3 font-bold text-xl">CodeMesh</span>}
             </div>
             
-            {/* User profile */}
+     
             <div className="p-4 border-b border-indigo-700 flex items-center">
               <div className="h-10 w-10 rounded-full bg-indigo-600 flex items-center justify-center">
                 {user.charAt(0).toUpperCase()}
@@ -67,7 +67,7 @@ function Chat() {
               )}
             </div>
             
-            {/* Online users */}
+   
             <div className="flex-1 overflow-y-auto">
               {showSidebar && <div className="px-4 py-2 text-xs font-semibold text-indigo-300">ONLINE USERS</div>}
               <div className="space-y-1 p-2">
@@ -82,7 +82,7 @@ function Chat() {
               </div>
             </div>
             
-            {/* Toggle sidebar */}
+
             <div className="p-4 border-t border-indigo-700">
               <button 
                 onClick={() => setShowSidebar(!showSidebar)}
@@ -94,10 +94,9 @@ function Chat() {
               </button>
             </div>
           </div>
-          
-          {/* Main content */}
+
           <div className="flex-1 flex flex-col">
-            {/* Header */}
+
             <div className="h-16 bg-white shadow-sm flex items-center justify-between px-6 flex-shrink-0">
               <div className="flex items-center">
                 <h1 className="text-xl font-bold text-gray-800">CodeMesh Chat</h1>
@@ -116,15 +115,13 @@ function Chat() {
                 </button>
               </div>
             </div>
-            
-            {/* Chat content */}
+      
             <div className="flex-1 overflow-y-auto bg-white">
               <div className="max-w-4xl mx-auto px-6 py-8">
                 <ChatList chats={chats} />
               </div>
             </div>
-            
-            {/* Input area */}
+   
             <div className="p-4 bg-white border-t border-gray-200 flex-shrink-0">
               <div className="max-w-4xl mx-auto">
                 <div className="bg-gray-50 rounded-xl border border-gray-200 p-1">
